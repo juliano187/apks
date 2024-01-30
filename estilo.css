@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: rgb(4, 13, 94);
+}
+header{
+    box-shadow: 2px 4px 10px rgb(231, 229, 229);
+    animation: moveToRight 3s ease-in-out;
+    animation-delay: 3000ms;
+  
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+    
+
+.logo{
+    height: 100px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.logo ,h1{
+    font-family: sans-serif;
+    color: azure;
+    text-shadow: 1px 4px 10px rgb(97, 8, 214);
+    font-size: 50px;
+}
+h2{
+    display: none;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    animation: moveToRight 4s ease-in-out;
+    animation-delay: 1000ms;
+    
+}
+section{
+  display: flex;
+  flex-direction: column;
+  }
+ section, a{
+    padding: 2px 20px;
+  }
+
+
+.mfc,.tve,.duna,.pix, .blue,.red{
+    display: flex;
+    align-items: center;
+  border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px rgba(4, 43, 216, 0.705); 
+    color: white;
+    padding: 0px 15px;
+    cursor: pointer;
+
+    
+}
+
+.mfc:hover,.tve:hover,.duna:hover,.pix:hover,.blue:hover,.red:hover{
+    background-color: rgba(243, 227, 7, 0.774 ) ;
+    transition: 1s all;
+    color: black;
+    border: none;
+    box-shadow: none;
+
+}
+img{
+ width: 70px;
+
+  padding: 0px 1px;  
+}
+p{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width :1024px){
+header{
+   display: flex;
+   
+ justify-content: center;
+   
+}
+h1{
+  display: none;
+}
+h2{
+    display: flex;
+    font-size: 35px;
+}
+}
